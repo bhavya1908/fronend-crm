@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Campaign</title>
+  <link rel="stylesheet" href="page4.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Add New Campaign</h1>
+    <button class="filter-btn">Filter</button>
+    <form id="campaignForm">
+      <div class="input-group">
+        <label for="minAge">Minimum Age:</label>
+        <input type="number" id="minAge" name="minAge" required>
+      </div>
+      <div class="input-group">
+        <label for="maxAge">Maximum Age:</label>
+        <input type="number" id="maxAge" name="maxAge" required>
+      </div>
+      <div class="input-group">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="lastVisitBefore">Last Visit Before:</label>
+        <input type="date" id="lastVisitBefore" name="lastVisitBefore">
+      </div>
+      <div class="input-group">
+        <label for="lastVisitAfter">Last Visit After:</label>
+        <input type="date" id="lastVisitAfter" name="lastVisitAfter">
+      </div>
+      <div class="input-group">
+        <label for="minTotalVisits">Minimum Total Visits:</label>
+        <input type="number" id="minTotalVisits" name="minTotalVisits">
+      </div>
+      <div class="input-group">
+        <label for="maxTotalVisits">Maximum Total Visits:</label>
+        <input type="number" id="maxTotalVisits" name="maxTotalVisits">
+      </div>
+      <div class="input-group">
+        <label for="minLatestPurchase">Minimum Latest Purchase:</label>
+        <input type="number" id="minLatestPurchase" name="minLatestPurchase" step="0.01">
+      </div>
+      <div class="input-group">
+        <label for="maxLatestPurchase">Maximum Latest Purchase:</label>
+        <input type="number" id="maxLatestPurchase" name="maxLatestPurchase" step="0.01">
+      </div>
+      <div class="input-group">
+        <label for="minTotalPurchase">Minimum Total Purchase:</label>
+        <input type="number" id="minTotalPurchase" name="minTotalPurchase" step="0.01">
+      </div>
+      <div class="input-group">
+        <label for="maxTotalPurchase">Maximum Total Purchase:</label>
+        <input type="number" id="maxTotalPurchase" name="maxTotalPurchase" step="0.01">
+      </div>
+      <div class="input-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Enter additional details..."></textarea>
+      </div>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
